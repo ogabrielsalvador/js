@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+section {
+    width: 380px;      /* dimensões da section */
+    padding: 20px 20px;
+
+    margin: auto;       /* irá centralizar a div horizontalmente */
+
+    border-radius: 10px;
+    /* Declaração dos parâmetros do box-shadow */
+    /* deslocamento horizontal, deslocamento vertical, espalhamento, cor */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.316);
+
+    background-color: white; 
+}
+
+section div p {
+    padding: 5px 0px;
+}
+
+p.number input{
+    width: 100px;
+}
+
+p.radio input {
+    width: 20px;
+}
+
+p.button input {
+    width: 75px;
+}
+
+section div#res img{
+    padding-top: 15px;
+}
+
+section div#res img{
+    padding-top: 15px;
+
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover{
+    color: red;
+}

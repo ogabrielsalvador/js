@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: blue;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+section {
+    width: 450px;      /* dimensões da section */
+    padding: 10px 20px;
+
+    margin: auto;       /* irá centralizar a div horizontalmente */
+
+    border-radius: 10px;
+    /* Declaração dos parâmetros do box-shadow */
+    /* deslocamento horizontal, deslocamento vertical, espalhamento, cor */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.316);
+
+    background-color: white; 
+}
+
+section div {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+section div p{
+    padding: 3px 0px;
+}
+
+input#numero {
+    text-align: center;
+    padding: 2px 0px;
+    width: 65px;
+}
+
+input.botao {
+    text-align: center;
+    padding: 2px 0px;
+    width: 80px;
+}
+
+select#sel_lista {
+    width: 210px;
+    padding: 3px 5px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover{
+    color: red;
+}

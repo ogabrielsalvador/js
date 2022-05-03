@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formatando strings</title>
+    
+    <style>
+        body {
+            background-color: rgb(191, 191, 253);
+            color: rgb(0, 0, 175);
+            font-size: 22px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Formatando strings</h1>
+
+    <script>
+
+        function pulaLinha() {          // função para pular linha
+            document.write('<br>')
+        }
+
+        var n1 = 1548.5
+
+        document.write(n1)
+        pulaLinha()
+
+        document.write(n1.toFixed(2))   // "toFixed" determina qts casas decimais serão mostradas
+        pulaLinha()
+
+        document.write(n1.toFixed(2).replace('.', ',')) // "replace" realiza a substituição (igual em Python)
+        pulaLinha()
+
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))        // "toLocaleString" padroniza um número com base em algum unidade monetária
+        pulaLinha()
+
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}))
+        pulaLinha()
+
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}))
+        pulaLinha()
+
+    </script>
+
+</body>
+</html>

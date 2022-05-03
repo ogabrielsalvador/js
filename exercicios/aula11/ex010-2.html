@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nacionalidade</title>
+    <style>
+        input#txtpais{
+            width: 200px;
+            height: auto;
+            color: black;
+            font: normal 15px Roboto;
+            background-color: rgb(193, 193, 193);
+            border-radius: 2px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Verificando sua Nacionalidade</h1>
+
+    País de nascimento: <input type="text" id="txtpais">
+
+    <input type="button" value="Verificar" id="verificar" onclick="verificar()">
+
+    <div id="res">  <!-- Onde irá ser impresso os resultados da análise de nacionalidade -->
+        
+    </div>
+
+    <script>
+        function verificar(){
+            var país = window.document.querySelector('input#txtpais').value.toLowerCase()   // importa o texto digitado no input, e coloca a string em letras minúsculas.
+            var país = país[0].toUpperCase() + país.substring(1)        // coloca apenas a primeira letra em maiúscula.
+            var res = window.document.querySelector('div#res')
+
+            res.innerHTML = `<p>O seu país de nascimento é <strong>${país}</strong>.</p>`
+
+            if(país == 'Brasil') {
+                res.innerHTML += '<p>Você é brasileiro</p>'
+            } else {
+                res.innerHTML += '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+
+</body>
+</html>

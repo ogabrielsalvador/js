@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+section {
+    width: 500px;      /* dimensões da section */
+    padding-bottom: 10px;
+
+    margin: auto;       /* irá centralizar a div horizontalmente */
+
+    border-radius: 10px;
+    /* Declaração dos parâmetros do box-shadow */
+    /* deslocamento horizontal, deslocamento vertical, espalhamento, cor */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.316);
+
+    text-align: center;
+    background-color: white; 
+}
+
+section div {
+    width: 100%;
+}
+
+section div#text {
+    line-height: 50px;
+}
+
+section div#picture {
+    background-color: aquamarine;
+
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover{
+    color: red;
+}

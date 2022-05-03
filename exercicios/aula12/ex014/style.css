@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: darkcyan;
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+section {
+    width: 500px;      /* dimensões da section */
+    padding: 15px 0px;
+
+    margin: auto;       /* irá centralizar a div horizontalmente */
+
+    border-radius: 10px;
+    /* Declaração dos parâmetros do box-shadow */
+    /* deslocamento horizontal, deslocamento vertical, espalhamento, cor */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.316);
+
+    text-align: center;
+    background-color: white; 
+}
+
+section div {
+    width: 100%;
+}
+
+section div#msg {
+    padding-bottom: 10px;
+}
+
+section div p.msg {
+    padding-bottom: 5px;
+}
+
+section div#foto {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+
+section div img#foto {
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover{
+    color: red;
+}

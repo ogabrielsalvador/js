@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formatando strings</title>
+    
+    <style>
+        body {
+            background-color: rgb(191, 191, 253);
+            color: rgb(0, 0, 175);
+            font-size: 22px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Formatando strings</h1>
+
+    <script>
+
+        var nome = window.prompt('Digite o seu nome: ')
+        document.write('Olá, <strong>' + nome + '</strong>! Seu nome tem ' + nome.length + ' letras <br>')
+        document.write('Seu nome em letras <strong>maiúsculas</strong> é ' + nome.toUpperCase() + '<br>')
+        document.write('Seu nome em letras <strong>minúsculas</strong> é ' + nome.toLowerCase() + '<br>')
+
+    </script>
+
+</body>
+</html>
